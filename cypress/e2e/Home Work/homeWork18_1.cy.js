@@ -20,7 +20,7 @@ const buttons = [
   };
   
   buttons.forEach((button, index) => {
-    clickWithDelay(button, 1000); 
+    clickWithDelay(button, 2000); 
   });
   
 })
