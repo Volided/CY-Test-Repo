@@ -5,7 +5,7 @@ module.exports = defineConfig({
     chromeWebSecurity: false,
     env: {
       BASE_URL: "https://www.saucedemo.com/",
-      USER_NAME: "standard_user",
+      USERS_NAME: "problem_user",
       USER_PASSWORD: "secret_sauce",
     },
 
@@ -17,8 +17,10 @@ module.exports = defineConfig({
       json: true,
 
     },
+
     setupNodeEvents(on, config) {
       
     },
   },
 });
+
