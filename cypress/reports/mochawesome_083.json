@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-11-03T09:59:37.472Z",
+    "end": "2024-11-03T09:59:39.917Z",
+    "duration": 2445,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ffea0f1b-3a29-4470-973a-a6b4f45bba5b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\HW20\\homeWork20.cy.js",
+      "file": "cypress\\e2e\\HW20\\homeWork20.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fc6b6100-bf0f-46a3-a8be-22953140017d",
+          "title": "Login Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should log in with valid credentials",
+              "fullTitle": "Login Test should log in with valid credentials",
+              "timedOut": null,
+              "duration": 1142,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#user-name').type(Cypress.env('USER_NAME'));\ncy.get('#password').type(Cypress.env('USER_PASSWORD'));\ncy.get('#login-button').click();",
+              "err": {
+                "message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n\nhttps://on.cypress.io/type",
+                "estack": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n\nhttps://on.cypress.io/type\n    at Context.type (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:115427:68)\n    at wrapped (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:138145:19)\nFrom Your Spec Code:\n    at Context.eval (webpack://cyrepotest/./cypress/e2e/HW20/homeWork20.cy.js:7:27)",
+                "diff": null
+              },
+              "uuid": "97be67fb-37ad-4209-a9b7-b2295b966ba3",
+              "parentUUID": "fc6b6100-bf0f-46a3-a8be-22953140017d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "97be67fb-37ad-4209-a9b7-b2295b966ba3"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1142,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
